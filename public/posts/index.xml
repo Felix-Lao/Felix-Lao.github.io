@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description></description>
     </item>
+    <item>
+      <title>我的第二篇文章</title>
+      <link>http://localhost:1313/posts/my-second-post/</link>
+      <pubDate>Fri, 27 Oct 2023 15:19:22 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <description>&lt;p&gt;欢迎阅读我的第二篇文章！用Markdown写作非常简单。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
