@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/posts/my-second-post/</guid>
       <description>&lt;p&gt;欢迎阅读我的第二篇文章！用Markdown写作非常简单。&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>我的第二篇文章</title>
+      <link>http://localhost:1313/posts/my-third-post/</link>
+      <pubDate>Fri, 27 Oct 2023 15:19:22 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;这里下面是正文开始&lt;/strong&gt; (请删除这行提示文字)&lt;/p&gt;&#xA;&lt;p&gt;欢迎阅读我的第三篇文章！用Markdown写作非常简单。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
