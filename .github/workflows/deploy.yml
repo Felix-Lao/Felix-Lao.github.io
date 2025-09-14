@@ -2,24 +2,21 @@ name: Deploy Hugo to GitHub Pages
 
 on:
   push:
-    branches: [main]
-
-  workflow_dispatch:
+    branches: [ main ]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
-          submodules: true
-          fetch-depth: 0
+          submodules: true  # 如果有使用Hugo主题作为子模块，需要这个
+          fetch-depth: 0    # 获取所有历史，用于Hugo的lastmod等
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          extended: true
 
       - name: Build
         run: hugo --minify
@@ -28,5 +25,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: main
           publish_dir: ./public
+          publish_branch: main  # 对于用户/组织站点，通常是main分支
